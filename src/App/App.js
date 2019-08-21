@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from './assets/logo.png'
-import About from './About/About'
-import Skills from './Skills/Skills'
-import Projects from './Projects/Projects'
+import logo from '../assets/logo.png'
+import About from '../About/About'
+import Skills from '../Skills/Skills'
+import Projects from '../Projects/Projects'
 
 import './App.css'
 
