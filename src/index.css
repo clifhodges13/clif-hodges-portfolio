@@ -152,3 +152,10 @@ body {
   font-family: 'Omnes', sans-serif;
   background: seagreen;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import axios from 'axios'
+
 
 export default function Projects() {
+  
+  useEffect(() => {
+    axios.get('https://api.github.com/users/clifhodges13')
+      .then(res => {
+        return res
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }, [])
+
   return (
     <div>
       Projects component
