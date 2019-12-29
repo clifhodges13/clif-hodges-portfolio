@@ -7,6 +7,7 @@ import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'
 import Nav from '../Nav/Nav'
 
+import logo from '../assets/logo.png'
 import './App.css'
 
 function App() {
@@ -23,10 +24,14 @@ function App() {
   }, []);
 
   return(
-    <div className="container">
+    <div className="App">
+
+      <div className="Logo">
+        <img src={logo} alt={logo} />
+      </div>
     
       <GithubContext.Provider value={data}>
-        <Route exact path='/' component={About} />
+        <Route exact path='/about' component={About} />
         <Route exact path='/skills' component={Skills} />
         <Route exact path='/projects' component={Projects} />
       </GithubContext.Provider>

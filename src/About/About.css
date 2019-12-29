@@ -1,0 +1,39 @@
+.About {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  width: 60vw;
+  padding: 30px;
+}
+
+.headshot {
+  height: 60vh;
+  margin-right: 30px;
+  border-radius: 20px;
+  box-shadow: 0 .25rem 1rem rgba(6, 190, 150, 0.623);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot img {
+  height: 100%;
+}
+
+.blur {
+  filter: blur(10px);
+  opacity: .5;
+}
+
+.text-container {
+  height: 50%;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Add transitions for switching pages */
