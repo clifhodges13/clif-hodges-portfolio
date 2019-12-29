@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { GithubContext } from '../contexts/GithubContext'
 import { Route } from 'react-router-dom'
+import Welcome from '../Welcome/Welcome'
 import About from '../About/About'
 import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'
@@ -31,6 +32,7 @@ function App() {
       </div>
     
       <GithubContext.Provider value={data}>
+        <Route exact path='/' component={Welcome} />
         <Route exact path='/about' component={About} />
         <Route exact path='/skills' component={Skills} />
         <Route exact path='/projects' component={Projects} />

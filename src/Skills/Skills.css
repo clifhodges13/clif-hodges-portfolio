@@ -1,0 +1,44 @@
+.Skills-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/bg-lightbeam.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: fadeIn forwards .75s ease-in;
+}
+
+.Skills {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  animation: slideInBottom forwards .75s ease-out .25s;
+}
+
+.list-container {
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: .1rem;
+}
+
+.list-container h2 {
+  margin-bottom: 20px;
+}
+
+.list-container ul li {
+  list-style-type: circle;
+  list-style-position: outside;
+  font-size: 1.6rem;
+  transition: all .2s ease;
+}
+
+.list-container ul li:hover {
+  text-decoration: underline;
+  cursor: alias;
+}
