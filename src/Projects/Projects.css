@@ -1,3 +1,43 @@
 .Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  width: 60vw;
+  padding: 30px;
   animation: slideInRight alternate .75s ease-out;
+}
+
+.Projects section {
+  border-bottom: 1px solid rgb(14, 219, 158);
+}
+
+.icon-container {
+  text-align: right;
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon-container a {
+  margin: 10px;
+  transition: all .2s ease;
+}
+
+.icon-container a:hover {
+  color: rgb(14, 219, 158);
+}
+
+@media (max-width: 800px) {
+  .Projects {
+    width: 90vw;
+    padding: 10px;
+    margin: 50px 0;
+  }
+  
+  .Projects section {
+    margin-bottom: 50px;
+  }
 }

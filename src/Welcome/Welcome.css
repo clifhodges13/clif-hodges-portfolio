@@ -1,0 +1,40 @@
+.Welcome {
+  background: rgba(235, 235, 235, .1);
+  text-align: center;
+  line-height: 1.5;
+  padding: 5%;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  width: 40vw;
+  animation: fadeIn alternate 1s ease-out;
+}
+
+.headshot {
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot img {
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 .25rem .5rem rgba(236, 236, 236, .3);
+}
+
+.blur {
+  filter: blur(10px);
+  opacity: .5;
+}
+
+@media (max-width: 800px) {
+  .Welcome {
+    width: 90vw;
+  }
+}

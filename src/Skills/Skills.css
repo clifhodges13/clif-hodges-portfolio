@@ -13,7 +13,7 @@
 }
 
 .Skills {
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -22,9 +22,15 @@
 }
 
 .list-container {
+  width: 40%;
+  height: 50vh;
+  /* margin: 30px; */
+  padding: 30px;
   text-align: left;
   line-height: 1.5;
   letter-spacing: .1rem;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .list-container h2 {
@@ -33,12 +39,41 @@
 
 .list-container ul li {
   list-style-type: circle;
-  list-style-position: outside;
+  list-style-position: inside;
   font-size: 1.6rem;
   transition: all .2s ease;
 }
 
 .list-container ul li:hover {
   text-decoration: underline;
-  cursor: alias;
+  letter-spacing: .15rem;
+}
+
+@media (max-width: 800px) {
+  .Skills {
+    width: 100%;
+    height: 100vh;
+    margin: 50px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Skills section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .list-container {
+    width: 90%;
+    height: 300px;
+    margin: 30px;
+  }
+  
+  .list-container h2 {
+    font-size: 1.8rem;
+    
+  }
 }
